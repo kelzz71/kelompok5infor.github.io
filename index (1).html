@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budi Santoso | Fotografer & Desainer</title>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --text: #1e2a32;
+      --muted: #5d6b73;
+      --accent: #0f6b6b;
+      --accent-dark: #0a4c4c;
+      --panel: #e9efee;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 20px;
+    }
+    .logo { font-weight: bold; font-size: 1.2rem; text-decoration: none; color: var(--text); }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--accent); }
+
+    main { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    .hero { padding: 72px 0 64px; max-width: 640px; }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.15; margin-bottom: 20px; }
+    .hero p { font-size: 1.15rem; color: var(--muted); margin-bottom: 28px; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent-dark); }
+
+    section { padding: 48px 0; border-top: 1px solid #d8d4ca; }
+    h2 { font-size: 1.7rem; margin-bottom: 20px; }
+
+    .about p { max-width: 640px; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .project { background: var(--panel); padding: 24px; border-radius: 10px; }
+    .project h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .project p { color: var(--muted); font-size: 0.95rem; }
+
+    .contact ul { list-style: none; }
+    .contact li { margin-bottom: 8px; }
+    .contact a { color: var(--accent); }
+
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 520px) {
+      nav a { margin: 0 16px 0 0; }
+      .hero { padding-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">Budi Santoso</a>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#karya">Karya</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Saya membuat foto dan desain yang enak dilihat.</h1>
+      <p>Fotografer dan desainer grafis di Jakarta. Terima proyek logo, poster, dan foto produk.</p>
+      <a class="btn" href="#kontak">Hubungi saya</a>
+    </div>
+
+    <section id="tentang" class="about">
+      <h2>Tentang</h2>
+      <p>Halo, saya Budi. Sudah lima tahun saya membantu usaha kecil tampil rapi lewat foto produk, logo, dan materi promosi. Ganti teks ini dengan cerita kamu sendiri.</p>
+    </section>
+
+    <section id="karya">
+      <h2>Karya</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Logo Kedai Kopi</h3>
+          <p>Identitas visual lengkap untuk kedai kopi lokal.</p>
+        </div>
+        <div class="project">
+          <h3>Foto Produk Batik</h3>
+          <p>Seri 40 foto untuk katalog toko online.</p>
+        </div>
+        <div class="project">
+          <h3>Poster Festival</h3>
+          <p>Poster dan spanduk untuk acara musik kampus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="contact">
+      <h2>Kontak</h2>
+      <ul>
+        <li>Email: <a href="mailto:budi@example.com">budi@example.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@budisantoso</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Budi Santoso. Dibuat dengan GitHub Pages.</footer>
+</body>
+</html>
